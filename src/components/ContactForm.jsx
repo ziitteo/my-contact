@@ -16,7 +16,9 @@ const ContactForm = () => {
       setPhoneNumber('');
       setProfileImage('https://thumb.mtstarnews.com/06/2024/07/2024070506520131994_1.jpg');
     } else {
-      alert('이름과 전화번호를 입력해주세요');
+      if (window.confirm('이름과 전화번호를 입력해주세요.')) {
+        // 사용자가 확인을 누르면 다른 작업을 수행할 수 있습니다.
+      }
     }
   };
 
