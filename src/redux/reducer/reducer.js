@@ -15,10 +15,7 @@ function reducer(state = initialState, action = {}) {
         ],
       };
     case 'SEARCH_CONTACT':
-      return {
-        ...state,
-        contactList: state.contactList.filter(item => item.name === payload.name),
-      };
+      return { ...state, keyword: payload.keyword };
     default:
       return { ...state };
   }

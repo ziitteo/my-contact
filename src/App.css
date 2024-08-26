@@ -46,15 +46,19 @@
 }
 
 .contact-form,
-.contact-List {
+.contact-list {
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.12) 0 4px 28px 0;
   padding: 32px;
 }
 
-.contact-List,
+.contact-list,
 .contact-form {
   min-height: 470px;
+}
+
+.contact-list > div {
+  margin-bottom: 20px;
 }
 
 .add-img {
