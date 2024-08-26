@@ -15,7 +15,7 @@ function reducer(state = initialState, action = {}) {
         ],
       };
     case 'SEARCH_CONTACT':
-      return { ...state, keyword: payload.keyword };
+      return { ...state, contactList: state.contactList.filter(item => item.name.includes(payload.keyword)) };
     default:
       return { ...state };
   }
