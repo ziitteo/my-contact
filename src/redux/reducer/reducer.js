@@ -1,5 +1,6 @@
 const initialState = {
   contactList: [],
+  keyword: '',
 };
 
 function reducer(state = initialState, action = {}) {
@@ -15,7 +16,7 @@ function reducer(state = initialState, action = {}) {
         ],
       };
     case 'SEARCH_CONTACT':
-      return { ...state, contactList: state.contactList.filter(item => item.name.includes(payload.keyword)) };
+      return { ...state, keyword: payload.keyword };
     default:
       return { ...state };
   }
